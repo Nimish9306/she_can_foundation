@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #050505;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* LEFT */
+
+.left-section {
+  flex: 1;
+  padding: 80px;
+  background: #050505;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-title {
+  color: #ff0000;
+  font-size: 6rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.description {
+  color: #cfcfcf;
+  line-height: 1.8;
+  max-width: 600px;
+  font-size: 1.1rem;
+}
+
+.stats {
+  display: flex;
+  gap: 50px;
+  margin: 40px 0;
+}
+
+.stats h2 {
+  color: #ff0000;
+}
+
+.stats span {
+  color: #aaa;
+}
+
+.join-btn {
+  width: 220px;
+  padding: 18px;
+  border: none;
+  background: #ff0000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  background: #d10000;
+}
+
+/* RIGHT */
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a0a0a;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 40px;
+  background: #0f0f0f;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.15);
+}
+
+.form-card h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 18px;
+  border: 1px solid #222;
+  background: #161616;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff0000;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background: #ff0000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #d10000;
+}
+
+.success {
+  text-align: center;
+  margin-top: 15px;
+  color: #00ff7f;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-section {
+    padding: 40px 25px;
+  }
+
+  .right-section {
+    padding: 20px;
+  }
+
+  .team-title {
+    font-size: 4rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .team-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .join-btn {
+    width: 100%;
+  }
+
+  .form-card {
+    padding: 25px;
+    max-width: 100%;
+  }
+
+  input,
+  textarea,
+  .submit-btn {
+    font-size: 16px;
+  }
+}
